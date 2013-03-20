@@ -12,7 +12,7 @@
 			  
 		<script>
  
-      // create a mobile App
+      // create a mobile App ?sap-ui-xx-fakeOS=android
       // it initializes the HTML page for mobile use and provides animated page handling
       var app = new sap.m.App("myApp", {initialPage:"page1"}); // page1 should be displayed first
       
@@ -25,7 +25,7 @@
                      new sap.m.Button({   // content is just one Button
                          text : "Lägg till rad",
                          tap : function() {
-                             app.to("page2", "flip");   // when tapped, it triggers drilldown to page 2
+                             app.to("page2", "fade");   // when tapped, it triggers drilldown to page 2
                          }
                          }),
                          new sap.ui.core.HTML({content:"<div>This page does not scroll.</div>"}) ]}
